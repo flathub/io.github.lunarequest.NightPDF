@@ -29,6 +29,11 @@
     </screenshot>
   </screenshots>
   <releases>
+	<release version="0.4.4" date="2022-11-11">
+		<description>
+			<p>This release forces the readerview to appear in darkmode</p>
+		</description>
+	</release>
 	<release version="0.4.2" date="2022-11-6">
 		<description>
 			<p>This release updates electron to electron 21, and updates all dependencies</p>
