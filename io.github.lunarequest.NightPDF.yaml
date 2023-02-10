@@ -11,6 +11,7 @@ command: nightpdf
 finish-args:
   - --share=ipc
   - --socket=x11
+  - --device=dri
   - --env=ZYPAK_SPAWN_LATEST_ON_REEXEC=0
   - --env=FLATPAK_HOST=1 
   - --env=GTK_USE_PORTAL=1
@@ -28,9 +29,9 @@ modules:
     build-commands:
       - jq 'del(.build.linux.target)' <<<$(<package.json) > package.json
       - jq '.build.linux.target=["dir"]' <<<$(<package.json) > package.json
-      - HOME=$PWD yarn --offline --verbose config set yarn-offline-mirror $FLATPAK_BUILDER_BUILDDIR/flatpak-node/yarn-mirror
-      - yarn --offline --verbose
-      - . flatpak-node/electron-builder-arch-args.sh; yarn run --offline dist $ELECTRON_BUILDER_ARCH_ARGS
+      - $FLATPAK_BUILDER_BUILDDIR/flatpak-node/yarn2-setup.sh
+      - yarn
+      - . flatpak-node/electron-builder-arch-args.sh; yarn run dist $ELECTRON_BUILDER_ARCH_ARGS
       - cp -r dist/linux-*unpacked /app/NightPDF 
       - install -Dm755 nightpdf.sh /app/bin/nightpdf
     post-install:
@@ -44,8 +45,8 @@ modules:
     sources:
      - type: git
        url: https://github.com/Lunarequest/NightPDF.git
-       tag: v0.4.4
-       commit: ef561cac076640f09bbb2970599201d7a585b693
+       tag: v0.4.7
+       commit: 7f59c175cf7f5f59d9eae4f435f63598715916a0
      - generated-sources.json
      - type: file
        path: io.github.lunarequest.NightPDF.metainfo.xml
