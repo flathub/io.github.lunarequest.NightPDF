@@ -29,6 +29,11 @@
     </screenshot>
   </screenshots>
   <releases>
+  <release version="0.4.7" date="2022-02-11">
+    <description>
+      <p>We switched to yarn berry aka yarn 3 this is a updated and maintained version yarn. Along with this using electron-updater we have auto updates</p>
+    </description>
+  </release>
 	<release version="0.4.4" date="2022-11-11">
 		<description>
 			<p>This release forces the readerview to appear in darkmode</p>
