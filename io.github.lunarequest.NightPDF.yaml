@@ -6,7 +6,7 @@ base: org.electronjs.Electron2.BaseApp
 base-version: '22.08'
 separate-locales: false
 sdk-extensions:
-  - org.freedesktop.Sdk.Extension.node19
+  - org.freedesktop.Sdk.Extension.node18
 command: nightpdf
 finish-args:
   - --share=ipc
@@ -25,7 +25,7 @@ modules:
         ELECTRON_CACHE: /run/build/NightPDF/flatpak-node/cache/electron
         TMPDIR: /run/build/NightPDF/flatpak-node/tmp
         ELECTRON_SKIP_BINARY_DOWNLOAD: 'true'
-        npm_config_nodedir: /usr/lib/sdk/node19
+        npm_config_nodedir: /usr/lib/sdk/node18
     build-commands:
       - jq 'del(.build.linux.target)' <<<$(<package.json) > package.json
       - jq '.build.linux.target=["dir"]' <<<$(<package.json) > package.json
