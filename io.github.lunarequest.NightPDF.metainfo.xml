@@ -31,12 +31,9 @@
     </screenshot>
   </screenshots>
   <releases>
-    <release version="1.0.4" date="2022-02-14">
+    <release version="1.0.5" date="2022-02-14">
       <description>
-        <p>(honey I shurnk the asar)</p>
-        <p>everything is built with rollup and no tsc raw calls</p>
-        <p>minify everything!</p>
-        <p>We also don't include a bunch unneeded directories and files now!</p>
+        <p>fixes a minor issue where the filename would not show by switching from rollup tsc to rollup swc</p>
       </description>
     </release>
   </releases>
