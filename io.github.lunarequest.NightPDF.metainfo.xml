@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop-application">
   <id>io.github.lunarequest.NightPDF</id>
-  
+
   <name>NightPDF</name>
   <summary>Dark Mode PDF reader</summary>
   <url type="homepage">https://github.com/Lunarequest/NightPDF</url>
@@ -9,19 +9,21 @@
 
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-2.0-only</project_license>
-  
+
   <supports>
     <control>pointing</control>
     <control>keyboard</control>
     <control>touch</control>
   </supports>
-  
+
   <description>
     <p>
-      NightPDF is a electron based application that allows one to read PDF files with dark mode. It has 3 default filters(monochrome, sepia &amp; redeye) along with a option to generate a custom filter along with no filter. NightPDF has a simplistic design that makes it intuitive to use.
+      NightPDF is a electron based application that allows one to read PDF files with dark mode. It
+      has 3 default filters(monochrome, sepia &amp; redeye) along with a option to generate a custom
+      filter along with no filter. NightPDF has a simplistic design that makes it intuitive to use.
     </p>
   </description>
-  
+
   <launchable type="desktop-id">io.github.lunarequest.NightPDF.desktop</launchable>
   <screenshots>
     <screenshot type="default">
@@ -29,27 +31,13 @@
     </screenshot>
   </screenshots>
   <releases>
-  <release version="1.0.0" date="2022-02-14">
-    <description>
-    <p>typescript 2(electric bogaloo)</p>
-    <p>this has been a verrrrrrrrrrrrrryyyyyyy long time coming. I've tried several times with various approaches(Lunarequest/NightPDF-ng and Lunarequest/nightpdf-nx) I am happy to say these both approaches have been dropped for a much much simpler solution using tsc and rollup!</p>
-    <p>its been a hard journey getting to a typescript rewrite of NightPDF. I hope everyone can enjoy benefit from the rewrite</p>
-    </description>
-  </release>
-  <release version="0.4.7" date="2022-02-11">
-    <description>
-      <p>We switched to yarn berry aka yarn 3 this is a updated and maintained version yarn. Along with this using electron-updater we have auto updates</p>
-    </description>
-  </release>
-	<release version="0.4.4" date="2022-11-11">
-		<description>
-			<p>This release forces the readerview to appear in darkmode</p>
-		</description>
-	</release>
-	<release version="0.4.2" date="2022-11-6">
-		<description>
-			<p>This release updates electron to electron 21, and updates all dependencies</p>
-		</description>
-	</release>
+    <release version="1.0.4" date="2022-02-14">
+      <description>
+        <p>(honey I shurnk the asar)</p>
+        <p>everything is built with rollup and no tsc raw calls</p>
+        <p>minify everything!</p>
+        <p>We also don't include a bunch unneeded directories and files now!</p>
+      </description>
+    </release>
   </releases>
 </component>
