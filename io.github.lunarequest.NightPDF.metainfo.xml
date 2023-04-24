@@ -31,9 +31,11 @@
     </screenshot>
   </screenshots>
   <releases>
-    <release version="1.0.5" date="2022-02-14">
+    <release version="1.2.1" date="2023-04-24">
       <description>
-        <p>fixes a minor issue where the filename would not show by switching from rollup tsc to rollup swc</p>
+        <p>this switches build system from rollup to esbuild with gulp tasks</p>
+        <p>the end bundle size has been reduced and css is now bundled into one file</p>
+        <p>windows builds are no longer broken</p>
       </description>
     </release>
   </releases>
