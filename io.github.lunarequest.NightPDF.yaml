@@ -19,7 +19,7 @@ modules:
   - name: NightPDF
     buildsystem: simple
     build-options:
-      append-path: /usr/lib/sdk/node16/bin
+      append-path: /usr/lib/sdk/node18/bin
       env:
         XDG_CACHE_HOME: /run/build/NightPDF/flatpak-node/cache
         ELECTRON_CACHE: /run/build/NightPDF/flatpak-node/cache/electron
@@ -27,12 +27,10 @@ modules:
         ELECTRON_SKIP_BINARY_DOWNLOAD: 'true'
         npm_config_nodedir: /usr/lib/sdk/node18
     build-commands:
-      - jq 'del(.linux.target)' <<<$(<electron-builder.json) > electron-builder.json
-      - jq '.linux.target=["dir"]' <<<$(<electron-builder.json) > electron-builder.json
       - $FLATPAK_BUILDER_BUILDDIR/flatpak-node/yarn2-setup.sh
       - yarn
       - NODE_ENV=production yarn build
-      - . flatpak-node/electron-builder-arch-args.sh; yarn run dist $ELECTRON_BUILDER_ARCH_ARGS
+      - . flatpak-node/electron-builder-arch-args.sh; OUTPUTDIR=1 yarn run dist $ELECTRON_BUILDER_ARCH_ARGS
       - cp -r dist/linux-*unpacked /app/NightPDF 
       - install -Dm755 nightpdf.sh /app/bin/nightpdf
     post-install:
@@ -46,8 +44,8 @@ modules:
     sources:
      - type: git
        url: https://github.com/Lunarequest/NightPDF.git
-       tag: v1.2.1
-       commit: d9d34f9e1eafb590c9e2e315a66fc61b99ce912c
+       tag: v1.2.6
+       commit: e81a03005947788bef68f298fe9a23f946055560
      - generated-sources.json
      - type: file
        path: io.github.lunarequest.NightPDF.metainfo.xml
