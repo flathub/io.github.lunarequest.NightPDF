@@ -12,8 +12,9 @@ finish-args:
   - --share=ipc
   - --socket=x11
   - --device=dri
+  - --socket=cups
   - --env=ZYPAK_SPAWN_LATEST_ON_REEXEC=0
-  - --env=FLATPAK_HOST=1 
+  - --env=FLATPAK=1 
   - --env=GTK_USE_PORTAL=1
 modules:
   - name: NightPDF
@@ -44,8 +45,8 @@ modules:
     sources:
      - type: git
        url: https://github.com/Lunarequest/NightPDF.git
-       tag: v1.2.6
-       commit: e81a03005947788bef68f298fe9a23f946055560
+       tag: v1.2.8
+       commit: dd518a58262a558f8377d6dfc8cb55e8f4d3bdb4
      - generated-sources.json
      - type: file
        path: io.github.lunarequest.NightPDF.metainfo.xml
