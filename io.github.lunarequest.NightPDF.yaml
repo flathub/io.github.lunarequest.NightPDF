@@ -45,8 +45,8 @@ modules:
     sources:
      - type: git
        url: https://github.com/Lunarequest/NightPDF.git
-       tag: v1.2.9
-       commit: a260d63145c0c202b928e46fb181c3da65f54c88
+       tag: v2.0.0
+       commit: 2f3d7ac97876354e02ccdb18121131434a7a54c7
      - generated-sources.json
      - type: file
        path: io.github.lunarequest.NightPDF.metainfo.xml
