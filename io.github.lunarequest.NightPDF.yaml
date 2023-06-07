@@ -13,6 +13,7 @@ finish-args:
   - --socket=x11
   - --device=dri
   - --socket=cups
+  - --talk-name=org.freedesktop.Notifications
   - --env=ZYPAK_SPAWN_LATEST_ON_REEXEC=0
   - --env=FLATPAK=1 
   - --env=GTK_USE_PORTAL=1
@@ -45,8 +46,8 @@ modules:
     sources:
      - type: git
        url: https://github.com/Lunarequest/NightPDF.git
-       tag: v2.0.1
-       commit: c2c31e62e885c083fcc89b4e733b026196c46f13
+       tag: v2.0.2
+       commit: 9b1fb290111eecccd4cb11605ac8f18cbdd50ac7
      - generated-sources.json
      - type: file
        path: io.github.lunarequest.NightPDF.metainfo.xml
