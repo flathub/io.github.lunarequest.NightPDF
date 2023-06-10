@@ -4,10 +4,12 @@
 
   <name>NightPDF</name>
   <summary>Dark Mode PDF reader</summary>
-  <url type="homepage">https://github.com/Lunarequest/NightPDF</url>
+  <url
+    type="homepage">https://github.com/Lunarequest/NightPDF</url>
   <content_rating type="oars-1.1" />
 
-  <metadata_license>CC0-1.0</metadata_license>
+  <metadata_license>
+  CC0-1.0</metadata_license>
   <project_license>GPL-2.0-only</project_license>
 
   <supports>
@@ -19,18 +21,25 @@
   <description>
     <p>
       NightPDF is a electron based application that allows one to read PDF files with dark mode. It
-      has 3 default filters(monochrome, sepia &amp; redeye) along with a option to generate a custom
-      filter along with no filter. NightPDF has a simplistic design that makes it intuitive to use.
+  has 3 default filters(monochrome, sepia &amp; redeye) along with a option to generate a custom
+  filter along with no filter. NightPDF has a simplistic design that makes it intuitive to use.
     </p>
   </description>
 
-  <launchable type="desktop-id">io.github.lunarequest.NightPDF.desktop</launchable>
+  <launchable
+    type="desktop-id">io.github.lunarequest.NightPDF.desktop</launchable>
   <screenshots>
     <screenshot type="default">
       <image>https://github.com/Lunarequest/NightPDF/blob/mistress/docs/nightpdf.gif?raw=true</image>
     </screenshot>
   </screenshots>
+  https://buildbot.flathub.org/#/builders/37/builds/5653
   <releases>
+    <release version="v2.0.3" date="2023-06-10">
+      <description>
+        <p>Fix name in metainfo and desktop</p>
+      </description>
+    </release>
     <release version="2.0.2" date="2023-05-11">
       <description>
         <p>Fix links opening in tabs instead of opening in the browser</p>
