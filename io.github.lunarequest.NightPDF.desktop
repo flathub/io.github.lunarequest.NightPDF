@@ -7,3 +7,4 @@ Icon=io.github.lunarequest.NightPDF
 StartupWMClass=NightPDF
 Comment=Dark Mode for PDFs
 Categories=Utility;
+MimeType=application/pdf;application/x-pdf;application/vnd.adobe.xdp+xml;application/vnd.adobe.xfdf;application/vnd.fdf;
