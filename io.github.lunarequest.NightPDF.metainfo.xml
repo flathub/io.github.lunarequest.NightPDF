@@ -35,7 +35,7 @@
   </screenshots>
   https://buildbot.flathub.org/#/builders/37/builds/5653
   <releases>
-    <release version="v2.0.3" date="2023-06-10">
+    <release version="2.0.3" date="2023-06-10">
       <description>
         <p>Fix name in metainfo and desktop</p>
       </description>

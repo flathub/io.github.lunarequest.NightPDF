@@ -14,6 +14,7 @@ finish-args:
   - --device=dri
   - --socket=cups
   - --talk-name=org.freedesktop.Notifications
+  - --talk-name=com.canonical.AppMenu.Registrar
   - --env=ZYPAK_SPAWN_LATEST_ON_REEXEC=0
   - --env=FLATPAK=1 
   - --env=GTK_USE_PORTAL=1
