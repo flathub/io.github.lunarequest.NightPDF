@@ -4,12 +4,14 @@
 
   <name>NightPDF</name>
   <summary>Dark Mode PDF reader</summary>
-  <url
-    type="homepage">https://github.com/Lunarequest/NightPDF</url>
+  <developer id="io.github.lunarequest">
+      <name>Lunarequest</name>
+  </developer>
+  <url type="homepage">https://github.com/Lunarequest/NightPDF</url>
+  <url type="vcs-browser">https://github.com/Lunarequest/NightPDF</url>
   <content_rating type="oars-1.1" />
 
-  <metadata_license>
-  CC0-1.0</metadata_license>
+  <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-2.0-only</project_license>
 
   <supports>
@@ -26,14 +28,12 @@
     </p>
   </description>
 
-  <launchable
-    type="desktop-id">io.github.lunarequest.NightPDF.desktop</launchable>
+  <launchable type="desktop-id">io.github.lunarequest.NightPDF.desktop</launchable>
   <screenshots>
     <screenshot type="default">
       <image>https://github.com/Lunarequest/NightPDF/blob/mistress/docs/nightpdf.gif?raw=true</image>
     </screenshot>
   </screenshots>
-  https://buildbot.flathub.org/#/builders/37/builds/5653
   <releases>
     <release version="2.0.3" date="2023-06-10">
       <description>
@@ -54,7 +54,7 @@
     <release version="2.0.0" date="2023-05-11">
       <description>
         <p>we have tabs!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!11</p>
-        <p>thank you to <a href="https://github.com/zeyus">Zeyus</a> for adding this feature</p>
+        <p>thank you to @Zeyus for adding this feature</p>
       </description>
     </release>
     <release version="1.2.9" date="2023-05-08" />
